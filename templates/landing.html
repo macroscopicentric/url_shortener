@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width">
+    <title>URL Shortener</title>
+    <link rel=stylesheet type=text/css href='{{ url_for('static',filename='style.css')}}'>
+    <!--above line copied directly from Flask tutorial-->
+</head>
+
+<body>
+    <div id="page">
+        <h1>Shorten your URL:</h1>
+
+        <div id="form">
+            <form method='post' action='url_shortener'>
+                <p>
+                <input class="form_box" type="textbox" name="response">
+                <input class="form_button" type="submit" value="Shorten">
+                </p>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

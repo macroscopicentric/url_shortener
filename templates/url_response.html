@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width">
+    <title>URL Shortener</title>
+    <link rel=stylesheet type=text/css href='{{ url_for('static',filename='style.css')}}'>
+    <!--above line copied directly from Flask tutorial-->
+</head>
+
+<body>
+    <div class="page">
+        <h1>URL Shortened!</h1>
+
+        <p>New URL: <a href={{url_response}}>{{url_response}}</a></p>
+        <br>
+        <p>Old URL: <a href={{url_request}}>{{url_request}}</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
